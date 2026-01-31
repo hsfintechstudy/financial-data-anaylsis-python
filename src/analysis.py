@@ -5,7 +5,13 @@ import matplotlib.pyplot as plt
 
 def main(): 
   print("Financial data analysis project initialized.")
+  ticker = "SPY" 
+  start_date = "2018-01-01" 
+  df = yf.download(ticker, start = start_date) 
+  df = df.dropna()
 
+  print(f"Downloaded {ticker} data from {start_date}")
+  print(df.head())
 if __name__ == "__main__":
   main()
 
