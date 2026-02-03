@@ -15,11 +15,11 @@ def main():
 
   df["daily_return"] = df["Adj Close"].pct_change() 
   mean_return = df["daily_return"].mean()
-  vol_return = df["daily__return"].std()
+  vol_return = df["daily_return"].std()
 
-print("\n--- Daily Return Summary ---") 
-print(f"Mean daily return: {mean_return:.6f}")
-print(f"Daily volatility (std): {vol_return:.6f}")
+  print("\n--- Daily Return Summary ---") 
+  print(f"Mean daily return: {mean_return:.6f}")
+  print(f"Daily volatility (std): {vol_return:.6f}")
 
 if __name__ == "__main__":
   main()
