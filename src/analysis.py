@@ -21,6 +21,12 @@ def main():
   print(f"Mean daily return: {mean_return:.6f}")
   print(f"Daily volatility (std): {vol_return:.6f}")
 
+  cum_max = df["Adj Close"].cummax()
+  drawdown = df["Adj Close"] / cum_max - 1
+  mdd = drawdown.min()
+
+  print(f"Maximum Drawdown (MDD) : {mdd:.2%}")
+
 if __name__ == "__main__":
   main()
 
