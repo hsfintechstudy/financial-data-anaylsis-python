@@ -27,6 +27,12 @@ def main():
 
   print(f"Maximum Drawdown (MDD) : {mdd:.2%}")
 
+  df["Adj Close"].plot(title="SPY Adjusted Close Price") 
+  plt.tight_layout()
+  plt.savefig("spy_price.png")
+  print("Saved plot: spy_price.png")
+  
+
 if __name__ == "__main__":
   main()
 
