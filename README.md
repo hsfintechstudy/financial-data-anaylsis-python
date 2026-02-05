@@ -14,3 +14,10 @@ The results demonstrate how quantitative indicators can support data-driven inve
 - Daily volatility (standard deviation): ~1.22%%
 - Maximum drawdown (MDD) : ~34%
 - Analysis period: from 2018-01-01
+
+## Price Trend Visualization
+
+![SPY Price](spy_price.png)
+
+![SPY Price](results/spy_price.png)
+
