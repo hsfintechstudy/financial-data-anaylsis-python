@@ -1,4 +1,4 @@
-# financial-data-analysis-python
+# financial-market-eda
 Python-based financial data analysis project focusing on return, volatility, and risk evaluation
 
 ## Overview 
